@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "s-olli-aero",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-21",
+  "workers_dev": false,
+  "node_compat": true,
+  "keep_vars": true,
+  "routes": [
+    {
+      "pattern": "go.olli.aero",
+      "custom_domain": true
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "LINKS",
+      "id": "646382e211d4483d876176db880c4260"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
